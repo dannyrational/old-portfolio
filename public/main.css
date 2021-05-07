@@ -1,19 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-@media (min-width: 640px) {
-}
+@media (min-width: 640px) {}
 
-@media (min-width: 768px) {
-}
+@media (min-width: 768px) {}
 
-@media (min-width: 1024px) {
-}
+@media (min-width: 1024px) {}
 
-@media (min-width: 1280px) {
-}
+@media (min-width: 1280px) {}
 
-@media (min-width: 1536px) {
-}
+@media (min-width: 1536px) {}
 
 /*! tailwindcss v2.1.2 | MIT License | https://tailwindcss.com */
 
@@ -772,6 +767,9 @@ video {
 .mb-2{
 	margin-bottom: 0.5rem;
 }
+.mb-5{
+	margin-bottom: 1.25rem;
+}
 .mt-\[clamp\(30px\2c 100px\)\]{
 	margin-top: clamp(30px,100px);
 }
@@ -786,15 +784,6 @@ video {
 }
 .mt-6{
 	margin-top: 1.5rem;
-}
-.mb-4{
-	margin-bottom: 1rem;
-}
-.mb-6{
-	margin-bottom: 1.5rem;
-}
-.mb-5{
-	margin-bottom: 1.25rem;
 }
 .box-border{
 	box-sizing: border-box;
@@ -871,8 +860,14 @@ video {
 .w-5{
 	width: 1.25rem;
 }
-.w-4\/5{
-	width: 80%;
+.w-\[90\%\]{
+	width: 90%;
+}
+.w-\[75\%\]{
+	width: 75%;
+}
+.w-\[85\%\]{
+	width: 85%;
 }
 .w-\[3\.23rem\]{
 	width: 3.23rem;
@@ -885,18 +880,6 @@ video {
 }
 .w-12{
 	width: 3rem;
-}
-.w-3\/4{
-	width: 75%;
-}
-.w-\[90\%\]{
-	width: 90%;
-}
-.w-\[75\%\]{
-	width: 75%;
-}
-.w-\[85\%\]{
-	width: 85%;
 }
 .min-w-\[3\.23rem\]{
 	min-width: 3.23rem;
@@ -1930,14 +1913,6 @@ video {
 
 	.sm\:w-2\/4{
 		width: 50%;
-	}
-
-	.sm\:items-center{
-		align-items: center;
-	}
-
-	.sm\:justify-between{
-		justify-content: space-between;
 	}
 
 	.sm\:text-center{
