@@ -13,3 +13,24 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+
+
+/* [CUSTOM]: What I Do - Card Hover Effect */
+.card .icon-wrap {
+    transition: all 300ms;
+}
+
+.card:hover .icon-wrap {
+    background: #FF4D41;
+    transition: all 300ms;
+}
+
+.card .icon {
+    transition: all 300ms;
+}
+
+.card:hover .icon {
+    color: white;
+    transition: all 300ms;
+}
