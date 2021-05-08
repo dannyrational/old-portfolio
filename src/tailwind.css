@@ -35,3 +35,16 @@
     color: white;
     transition: all 300ms;
 }
+
+/* [CUSTOM]: Portfolio - Card Hover Effect */
+.portfolio-card .portfolio-card_overlay {
+    transform: scale(0);
+    opacity: 0;
+    transition: all 300ms;
+}
+
+.portfolio-card:hover .portfolio-card_overlay {
+    transform: scale(1);
+    opacity: 1;
+    transition: all 400ms ease;
+}
