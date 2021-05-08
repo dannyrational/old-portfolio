@@ -22,9 +22,9 @@
 }
 
 .card:hover .icon-wrap {
-    background: #FF4D41;
+    background: #EF4444;
     transition: all 300ms;
-    border-color: #FF4D41;
+    border-color: #EF4444;
 }
 
 .card .icon {
@@ -47,4 +47,11 @@
     transform: scale(1);
     opacity: 1;
     transition: all 400ms ease;
+}
+
+/* [CUSTOM]: Contact Me - focus-visible style */
+.outline-red-500 {
+    outline-color: rgba(254, 202, 202, 1);
+
+
 }
