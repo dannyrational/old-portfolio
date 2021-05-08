@@ -24,6 +24,7 @@
 .card:hover .icon-wrap {
     background: #FF4D41;
     transition: all 300ms;
+    border-color: #FF4D41;
 }
 
 .card .icon {
