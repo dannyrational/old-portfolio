@@ -3,7 +3,7 @@ const openNavBtn = document.querySelector("#open-nav-btn");
 const closeNavBtn = document.querySelector("#close-nav-btn");
 const navMenuLinks = document.querySelector("#nav-links-col");
 const navContainer = document.querySelector("#nav-container");
-const captcha = document.querySelector(".rc-anchor-normal");
+
 
 // Navigation Bar
 //Event Listeners
@@ -22,6 +22,3 @@ closeNavBtn.addEventListener("click", () => {
   navMenuLinks.classList.add("translate-x-full");
   navContainer.classList.add("border-b");
 });
-
-//Captcha resize
-captcha.style.width = "275px";
