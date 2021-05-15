@@ -14,19 +14,19 @@
 <body class=" font-poppins">
   <header class="">
     <!-- Navigation -->
-    <div class="fixed z-40 w-full px-4 py-2 bg-white border-b border-gray-100" id="nav-container">
+    <div class="fixed z-40 w-full px-4 py-2 bg-white border-b border-gray-100 sm:px-10" id="nav-container">
       <div class="flex items-center justify-between h-[36px]">
         <div class="">
           <a href=""><img class="w-9" src="images/portfolio-logo.png" alt="" /></a>
         </div>
         <div class="p-1 ml-auto mr-4 space-x-1">
           <a href=""><i
-              class="p-1 transition duration-300 transform fab fa-twitter hover:text-blue-400 hover:-translate-y-1"></i></a>
+              class="p-1 text-gray-800 transition duration-300 transform fab fa-twitter hover:text-blue-400 hover:-translate-y-1"></i></a>
           <a href=""><i
-              class="p-1 transition duration-300 transform fab fa-instagram hover:text-red-500 hover:-translate-y-1"></i></a>
+              class="p-1 text-gray-800 transition duration-300 transform fab fa-instagram hover:text-red-500 hover:-translate-y-1"></i></a>
         </div>
         <div
-          class="border-b border-gray-100 px-4 fixed top-[52px] left-0 flex justify-between items-center w-full h-[50px] bg-white text-sm font-normal text-gray-500 transform translate-x-full transition-all duration-300 ease-out"
+          class="border-b border-gray-100 px-4 fixed top-[52px] left-0 flex justify-between items-center w-full h-[50px] bg-white text-md font-normal text-gray-500 transform translate-x-full transition-all duration-300 ease-out"
           id="nav-links-col">
           <a href="#"
             class="px-2 py-1 transition-all duration-200 ease-in rounded hover:bg-red-500 hover:text-white">Home</a>
@@ -39,10 +39,10 @@
         </div>
         <div>
           <button class="p-1 text-base border rounded focus:outline-none" id="open-nav-btn">
-            <i class="p-1 text-gray-500 transition duration-300 fas fa-arrow-left hover:text-red-500"></i>
+            <i class="p-1 text-gray-800 transition duration-300 fas fa-arrow-left hover:text-red-500"></i>
           </button>
           <button class="hidden p-1 text-base border rounded focus:outline-none" id="close-nav-btn">
-            <i class="p-1 text-gray-500 transition duration-300 fas fa-arrow-right hover:text-red-500"></i>
+            <i class="p-1 text-gray-800 transition duration-300 fas fa-arrow-right hover:text-red-500"></i>
           </button>
         </div>
       </div>
@@ -50,10 +50,10 @@
   </header>
 
   <main class="">
-    <!-- Home Section -->
-    <div class="px-4 pb-12 pt-[112px]">
+    <!-- Home Container -->
+    <div class="sm:px-10 px-4 pb-12 pt-[112px]">
       <div class="grid gap-8 md:grid-cols-2">
-        <div class="">
+        <div class="md:order-2">
           <h3 class="mb-1 text-xl text-gray-500">Hey, there!</h3>
           <h1 class="leading-none text-[40px] font-semibold text-gray-800">
             I'm Danny
@@ -68,53 +68,54 @@
             Let's Talk<i class="ml-2 text-base far fa-paper-plane"></i>
           </button>
         </div>
-        <div class="">
-          <img class="mx-auto rounded-md" src="images/selfie-bw.png" alt="" />
+        <div class="md:order-1 w-full bg-center bg-no-repeat bg-cover rounded-md h-[650px]"
+          style="background-image: url('images/selfie-bw.png');">
+
         </div>
       </div>
     </div>
 
     <!-- About Container -->
-    <div class="px-4 py-12 bg-[#FFF9F9]">
-      <div class="grid gap-8 md:grid-cols-2">
+    <div class="sm:px-10 px-4 py-12 bg-[#FFF9F9]">
+      <div class="grid gap-10 md:grid-cols-2">
         <!-- About Me -->
         <div class="space-y-5">
-          <h1 class="mb-8 text-2xl font-medium">
+          <h1 class="mb-8 text-3xl font-medium text-gray-800">
             About Me<span class="inline-block px-4 py-[1px] ml-4 my-1 bg-red-500"></span>
           </h1>
 
-          <div class="flex">
-            <p class="w-2/4 text-base font-semibold">
+          <div class="flex sm:px-7">
+            <p class="w-2/4 text-base font-semibold text-gray-800">
               <i class="w-5 mr-4 text-base text-red-500 fas fa-id-card-alt"></i>Name:
             </p>
             <p class="w-2/4 text-base text-gray-500 ">
               Danny Rodas
             </p>
           </div>
-          <div class="flex">
-            <p class="w-2/4 text-base font-semibold">
+          <div class="flex sm:px-7">
+            <p class="w-2/4 text-base font-semibold text-gray-800">
               <i class="w-5 mr-4 text-base text-red-500 fas fa-birthday-cake"></i>Age:
             </p>
             <p class="w-2/4 text-base text-gray-500 ">34</p>
           </div>
-          <div class="flex">
-            <p class="w-2/4 text-base font-semibold">
+          <div class="flex sm:px-7">
+            <p class="w-2/4 text-base font-semibold text-gray-800">
               <i class="w-5 mr-4 text-base text-red-500 fas fa-map-marker-alt"></i>Location:
             </p>
             <p class="w-2/4 text-base text-gray-500 ">
               Guatemala City
             </p>
           </div>
-          <div class="flex">
-            <p class="w-2/4 text-base font-semibold" class="font-semibold">
+          <div class="flex sm:px-7">
+            <p class="w-2/4 text-base font-semibold text-gray-800" class="font-semibold">
               <i class="w-5 mr-4 text-base text-red-500 fas fa-laptop-house"></i>Freelance:
             </p>
             <p class="w-2/4 text-base text-gray-500 ">
               Available
             </p>
           </div>
-          <div class="flex">
-            <p class="w-2/4 text-base font-semibold" class="font-semibold">
+          <div class="flex sm:px-7">
+            <p class="w-2/4 text-base font-semibold text-gray-800" class="font-semibold">
               <i class="w-5 mr-4 text-base text-red-500 fab fa-github"></i>Github:
             </p>
             <a href="https://github.com/dannyrational" target="_blank" class="">
@@ -126,46 +127,56 @@
         </div>
         <!-- My Skills -->
         <div class="">
-          <h1 class="mb-8 text-2xl font-medium">
+          <h1 class="mb-8 text-3xl font-medium text-gray-800">
             My Skills<span class="inline-block px-4 py-[1px] ml-4 my-1 bg-red-500"></span>
           </h1>
-          <div class="flex mb-2">
-            <p class="text-base font-semibold">Web Design</p>
+          <div class="flex mb-2 sm:px-7">
+            <p class="text-base font-semibold text-gray-800">Web Design</p>
             <p class="ml-auto text-base text-gray-500">90%</p>
           </div>
-          <div class="w-full h-3 mb-5 overflow-hidden border skill-meter rounded-3xl">
-            <div class="w-[90%] h-full bg-red-500 rounded-3xl skill-meter_color"></div>
+          <div class="mb-5 sm:px-7">
+            <div class="w-full h-3 overflow-hidden border skill-meter rounded-3xl">
+              <div class="w-[90%] h-full bg-red-500 rounded-3xl skill-meter_color"></div>
+            </div>
           </div>
-          <div class="flex mb-2">
-            <p class="text-base font-semibold">Development</p>
+          <div class="flex mb-2 sm:px-7">
+            <p class="text-base font-semibold text-gray-800">Development</p>
             <p class="ml-auto text-base text-gray-500">75%</p>
           </div>
-          <div class="w-full h-3 mb-5 overflow-hidden border skill-meter rounded-3xl">
-            <div class="w-[75%] h-full bg-red-500 rounded-3xl skill-meter_color"></div>
+          <div class="mb-5 sm:px-7">
+            <div class="w-full h-3 overflow-hidden border skill-meter rounded-3xl">
+              <div class="w-[75%] h-full bg-red-500 rounded-3xl skill-meter_color"></div>
+            </div>
           </div>
-          <div class="flex mb-2">
-            <p class="text-base font-semibold">WordPress</p>
+
+          <div class="flex mb-2 sm:px-7">
+            <p class="text-base font-semibold text-gray-800">WordPress</p>
             <p class="ml-auto text-base text-gray-500">85%</p>
           </div>
-          <div class="w-full h-3 mb-5 overflow-hidden border skill-meter rounded-3xl">
-            <div class="w-[85%] h-full bg-red-500 rounded-3xl skill-meter_color"></div>
+          <div class="mb-5 sm:px-7">
+            <div class="w-full h-3 overflow-hidden border skill-meter rounded-3xl">
+              <div class="w-[85%] h-full bg-red-500 rounded-3xl skill-meter_color"></div>
+            </div>
           </div>
-          <div class="flex mb-2">
-            <p class="text-base font-semibold">Logo Design</p>
+          <div class="flex mb-2 sm:px-7">
+            <p class="text-base font-semibold text-gray-800">Logo Design</p>
             <p class="ml-auto text-base text-gray-500">90%</p>
           </div>
-          <div class="w-full h-3 overflow-hidden border skill-meter rounded-3xl">
-            <div class="w-[90%] h-full bg-red-500 rounded-3xl skill-meter_color"></div>
+          <div class="sm:px-7">
+            <div class="w-full h-3 overflow-hidden border skill-meter rounded-3xl">
+              <div class="w-[90%] h-full bg-red-500 rounded-3xl skill-meter_color"></div>
+            </div>
           </div>
+
         </div>
       </div>
     </div>
 
     <!-- What I Do Container -->
-    <div class="px-4 py-12 bg-[#FFF9F9]">
+    <div class="sm:px-10 px-4 py-12 bg-[#FFF9F9]">
       <div class="mb-8">
         <div class="">
-          <h1 class="text-2xl font-medium ">
+          <h1 class="text-3xl font-medium text-gray-800">
             What I Do<span class="inline-block px-4 py-[1px] ml-4 my-1 bg-red-500"></span>
           </h1>
         </div>
@@ -176,7 +187,7 @@
           <div class="transition duration-300 border border-red-200 rounded-md card p-7 hover:border-red-500">
             <div class="inline-block px-4 py-3 mb-6 bg-red-100 border border-red-200 rounded-md icon-wrap ">
               <i class="text-lg text-red-500 icon fas fa-plane-arrival"></i></div>
-            <h3 class="mb-3 text-base font-semibold">Landing Page</h3>
+            <h3 class="mb-3 text-lg font-semibold text-gray-800">Landing Page</h3>
             <p class="mb-3 text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos libero,
               blanditiis
               repellat nulla nisi
@@ -189,7 +200,7 @@
           <div class="transition duration-300 border border-red-200 rounded-md card p-7 hover:border-red-500">
             <div class="inline-block px-4 py-3 mb-6 bg-red-100 border border-red-200 rounded-md icon-wrap ">
               <i class="text-lg text-red-500 icon fas fa-briefcase"></i></div>
-            <h3 class="mb-3 text-base font-semibold">Professional Website</h3>
+            <h3 class="mb-3 text-lg font-semibold text-gray-800">Professional Website</h3>
             <p class="mb-3 text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos libero,
               blanditiis
               repellat nulla nisi
@@ -202,7 +213,7 @@
           <div class="transition duration-300 border border-red-200 rounded-md card p-7 hover:border-red-500">
             <div class="inline-block px-4 py-3 mb-6 bg-red-100 border border-red-200 rounded-md icon-wrap ">
               <i class="text-lg text-red-500 icon fas fa-store"></i></div>
-            <h3 class="mb-3 text-base font-semibold">Ecommerce Website</h3>
+            <h3 class="mb-3 text-lg font-semibold text-gray-800">Ecommerce Website</h3>
             <p class="mb-3 text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos libero,
               blanditiis
               repellat nulla nisi
@@ -215,10 +226,10 @@
     </div>
 
     <!-- Portfolio Container -->
-    <div class="px-4 py-12 bg-white">
+    <div class="px-4 py-12 bg-white sm:px-10">
       <div class="">
         <div class="">
-          <h1 class="mb-8 text-2xl font-medium">
+          <h1 class="mb-8 text-3xl font-medium text-gray-800">
             Portfolio<span class="inline-block px-4 py-[1px] ml-4 my-1 bg-red-500"></span>
           </h1>
         </div>
@@ -259,10 +270,10 @@
     </div>
 
     <!-- Contact Container -->
-    <div class="px-4 py-12">
+    <div class="px-4 py-12 sm:px-10">
       <div class="">
         <div class="">
-          <h1 class="mb-8 text-2xl font-medium">
+          <h1 class="mb-8 text-3xl font-medium text-gray-800">
             Contact Me<span class="inline-block px-4 py-[1px] ml-4 my-1 bg-red-500"></span>
           </h1>
         </div>
@@ -289,11 +300,11 @@
     </div>
   </main>
   <footer>
-    <div class="p-4 bg-gray-200">
-      <div class="text-gray-500">
-        <p class="mb-2 text-xs font-light text-center">Copyright 2021 by Daniel Rodas. <br> All Rights Reserved.
-        </p>
-        <p class="text-xs font-light text-center">Powered by Web Blends 🐱‍💻</p>
+    <!-- Footer Container -->
+    <div class="p-4 bg-gray-200 sm:px-10">
+      <div class="text-gray-400 ">
+        <p class="mb-2 text-xs font-light text-center ">Copyright 2021 by Daniel Rodas. All Rights Reserved.</p>
+
       </div>
     </div>
   </footer>
