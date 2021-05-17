@@ -40,13 +40,13 @@
 .portfolio-card .portfolio-card_overlay {
     transform: scale(0);
     opacity: 0;
-    transition: all 300ms;
+    transition: all 600ms;
 }
 
 .portfolio-card:hover .portfolio-card_overlay {
     transform: scale(1);
     opacity: 1;
-    transition: all 400ms ease;
+    transition: all 500ms ease;
 }
 
 /* [CUSTOM]: Contact Me - focus-visible style */
