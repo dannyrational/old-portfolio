@@ -46,7 +46,7 @@
 
   <main class="">
     <!-- Home Section -->
-    <div class="relative px-4 pb-16 overflow-hidden pt-28 xl:pt-20 sm:px-0">
+    <div class="relative px-4 pb-16 overflow-hidden pt-28 xl:pt-20 sm:px-02">
       <div
         class="xl:screen xl:h-screen mx-auto sm:w-[550px] xl:w-[1152px] md:w-[690px] lg:w-[920px] 2xl:w-[1382px] grid gap-8 md:grid-cols-2 ">
         <div class="flex flex-col items-start justify-center" data-aos="fade-right" data-aos-duration="1500">
@@ -336,7 +336,9 @@
   <script src=" public/script.js"> </script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+      offset: -50,
+    });
   </script>
 </body>
 
