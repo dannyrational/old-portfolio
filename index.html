@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="scroll-behavior: smooth;">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -9,15 +9,18 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="stylesheet" href="public/main.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="scrolltotop_arrow_jquery-master/css/scrolltotop_arrow_style.css">
   <title>Danny Rodas | Portfolio</title>
+  <meta name="description" content="I'm a web designer & front‑end developer focused on crafting clean & user‑friendly experiences. I am passionate about building great websites that improve the lives of those around me. I can help you with your web presence.
 </head>
 
-<body class="font-poppins">
-  <a class="fixed z-50 px-3 py-2 text-white transition duration-500 bg-red-500 border rounded opacity-0 cursor-pointer right-2 bottom-2 lg:right-10 lg:bottom-7"
-    id="back-top-btn" onclick="topFunction()">
-    <i class="fas fa-arrow-up"></i>
-  </a>
-  <header class="">
+<body class=" font-poppins">
+  <!-- Scroll to Top -->
+  <div id="scrolltotop_parent" class="scrolltotop_hide_onload">
+    <div tabindex="0" id="scrolltotop_arrow">
+    </div>
+  </div>
+  <header>
     <!-- Top Bar -->
     <div class="fixed z-40 w-full px-4 py-2 bg-white border-b border-gray-100 sm:px-0" id="nav-container">
       <div
@@ -27,9 +30,8 @@
         </div>
         <div class="p-1 ml-auto mr-4 space-x-1">
           <a href="https://twitter.com/dannyrational" target="_blank"><i
-              class="p-1 text-xl text-blue-400 transition duration-300 transform hover:text-blue-500 fab fa-twitter hover:-translate-y-1"></i></a>
-          <a href="" target="_blank"><i
-              class="p-1 text-xl text-red-500 transition duration-300 transform hover:text-red-600 fab fa-instagram hover:-translate-y-1"></i></a>
+              class="p-1 text-2xl text-blue-400 transition duration-300 transform hover:text-blue-500 fab fa-twitter hover:-translate-y-1"></i></a>
+
         </div>
         <div>
           <a href="#contact-form">
@@ -69,7 +71,7 @@
           </a>
         </div>
         <div class="xl:invisible w-full bg-center bg-no-repeat bg-cover rounded-md h-[700px] md:h-[450px] lg:h-[500px]"
-          style="background-image: url('images/IMG-0723-2.jpg');" data-aos="fade-left" data-aos-duration="1500">
+          style="background-image: url('images/IMG-0723-2-min.jpg');" data-aos="fade-left" data-aos-duration="1500">
         </div>
       </div>
       <div class="absolute top-0 hidden w-full grid-cols-2 gap-52 xl:h-full xl:grid" style="z-index: -1;">
@@ -79,7 +81,7 @@
           <h1>Danny</h1>
 
         </div>
-        <div class="w-full h-full bg-no-repeat bg-cover" style="background-image: url('images/IMG-0723.jpg');"
+        <div class="w-full h-full bg-no-repeat bg-cover" style="background-image: url('images/IMG-0723-min.jpg');"
           data-aos="fade-left" data-aos-duration="2000"></div>
       </div>
     </div>
@@ -335,13 +337,17 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src=" public/script.js"> </script>
+  <script src="scrolltotop_arrow_jquery-master/js/scrolltotop_arrow_code.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({
       offset: -50,
     });
   </script>
-</body>
+  </body>
 
 </html>
